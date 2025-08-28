@@ -32,8 +32,10 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%);
             min-height: 100vh;
+            background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%),
+                url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80') center center / cover no-repeat;
+            background-blend-mode: overlay;
         }
         header {
             background: #2d98da;
@@ -163,6 +165,7 @@
         <h1>Event Management System</h1>
         <p>Organize, manage, and track your events effortlessly</p>
     </header>
+<<<<<<< HEAD
         .navbar {
             background: #2d98da;
             color: #fff;
@@ -198,6 +201,14 @@
             color: #dff9fb;
         }
     /* Search button and bar styles removed */
+=======
+    <!-- Simple Navbar -->
+    <nav style="background: #3867d6; padding: 12px 0; text-align: center;">
+        <a href="index.html" style="color: #fff; text-decoration: none; margin: 0 18px; font-weight: 500; font-size: 1.1em;">Home</a>
+        <a href="login.html" style="color: #fff; text-decoration: none; margin: 0 18px; font-weight: 500; font-size: 1.1em;">Login</a>
+        <a href="register.html" style="color: #fff; text-decoration: none; margin: 0 18px; font-weight: 500; font-size: 1.1em;">Register</a>
+    </nav>
+>>>>>>> 6041cdde11e1dd9ff28ab763d16956e731ae6d89
     <div class="container">
         <!-- About Section -->
         <section id="about" style="margin:40px 0 30px 0;">
@@ -264,8 +275,33 @@
                 <h3>Analytics</h3>
                 <p>View event statistics and generate insightful reports.</p>
             </div>
+            <div class="feature">
+                <img src="https://images.unsplash.com/photo-1515165562835-cf7747f1e8c5?auto=format&fit=crop&w=400&q=80" alt="Photo Gallery" style="width:100%;max-width:120px;border-radius:8px;margin-bottom:10px;">
+                <h3>Photo Gallery</h3>
+                <p>Showcase event highlights and memories with a beautiful gallery.</p>
+            </div>
         </div>
+            <section style="margin-top:40px;">
+                <h2>Why Choose Our Event Management System?</h2>
+                <ul style="line-height:2;">
+                    <li><strong>Efficiency:</strong> Streamline the entire event planning process from start to finish.</li>
+                    <li><strong>Customization:</strong> Tailor events to your needs, whether it's a conference, seminar, wedding, or party.</li>
+                    <li><strong>Collaboration:</strong> Work with teams, vendors, and volunteers in one platform.</li>
+                    <li><strong>Real-Time Updates:</strong> Instantly update schedules, attendee lists, and event details.</li>
+                    <li><strong>Security:</strong> Protect sensitive data and ensure privacy for all participants.</li>
+                </ul>
+                <h3>Use Cases</h3>
+                <p>Our system is perfect for corporate events, educational seminars, community gatherings, concerts, and more. Whether you're an event planner, organization, or individual, our platform helps you deliver successful events every time.</p>
+            </section>
         <a href="#" class="cta">Get Started</a>
+        <section style="margin-top:40px;">
+            <h2>Event Photo Gallery</h2>
+            <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;">
+                <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=200&q=80" alt="Event 1" style="width:180px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 2px 8px rgba(44,62,80,0.12);">
+                <img src="https://images.unsplash.com/photo-1465101178521-c1a4c8a0f8f9?auto=format&fit=crop&w=200&q=80" alt="Event 2" style="width:180px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 2px 8px rgba(44,62,80,0.12);">
+                <img src="https://images.unsplash.com/photo-1515169071953-6d7d6b8c1a4c?auto=format&fit=crop&w=200&q=80" alt="Event 3" style="width:180px;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 2px 8px rgba(44,62,80,0.12);">
+            </div>
+        </section>
     </div>
     <footer>
         &copy; 2025 Event Management System. All rights reserved.
