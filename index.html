@@ -307,6 +307,41 @@
                 <p>Our system is perfect for corporate events, educational seminars, community gatherings, concerts, and more. Whether you're an event planner, organization, or individual, our platform helps you deliver successful events every time.</p>
             </section>
         <a href="#" class="cta">Get Started</a>
+        <div style="position:relative;display:flex;justify-content:center;margin-top:10px;">
+            <button onclick="document.getElementById('getStartedMenu').classList.toggle('show');" class="cta" style="width:220px;">Explore Features ▼</button>
+            <div id="getStartedMenu" style="display:none;position:absolute;top:50px;left:50%;transform:translateX(-50%);background:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(44,62,80,0.12);min-width:220px;z-index:10;">
+                <a href="#chat" style="display:block;padding:12px 20px;color:#212121;text-decoration:none;border-bottom:1px solid #eee;">Live Chat Support</a>
+                <a href="#countdown" style="display:block;padding:12px 20px;color:#212121;text-decoration:none;border-bottom:1px solid #eee;">Event Countdown Timer</a>
+                <a href="#social" style="display:block;padding:12px 20px;color:#212121;text-decoration:none;border-bottom:1px solid #eee;">Social Media Integration</a>
+                <a href="#mobile" style="display:block;padding:12px 20px;color:#212121;text-decoration:none;border-bottom:1px solid #eee;">Mobile-Friendly Design</a>
+                <a href="#map" style="display:block;padding:12px 20px;color:#212121;text-decoration:none;">Event Map</a>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('click', function(e) {
+                var menu = document.getElementById('getStartedMenu');
+                if (!e.target.matches('.cta')) {
+                    if (menu && menu.classList.contains('show')) {
+                        menu.classList.remove('show');
+                        menu.style.display = 'none';
+                    }
+                } else {
+                    if (menu.classList.contains('show')) {
+                        menu.style.display = 'block';
+                    } else {
+                        menu.style.display = 'none';
+                    }
+                }
+            });
+            document.querySelector('.cta[onclick]').addEventListener('click', function() {
+                var menu = document.getElementById('getStartedMenu');
+                if (menu.classList.contains('show')) {
+                    menu.style.display = 'block';
+                } else {
+                    menu.style.display = 'none';
+                }
+            });
+        </script>
         <section style="margin-top:40px;">
             <h2>Event Photo Gallery</h2>
             <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;">
